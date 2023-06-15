@@ -3,10 +3,10 @@ import java.util.List;
 
 public class Animal {
     private String nome;
-    public String tutor;
+    public Tutor tutor;
     private List<Atendimento> atendimentos;
 
-    public Animal (String nome , String tutor) {
+    public Animal (String nome , Tutor tutor) {
         this.nome = nome;
         this.tutor = tutor;
         this.atendimentos = new ArrayList<>();
@@ -16,7 +16,7 @@ public class Animal {
         return nome;
     }
 
-    public String getTutor() {
+    public Tutor getTutor() {
         return tutor;
     }
 
